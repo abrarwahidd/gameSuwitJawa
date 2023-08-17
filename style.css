@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.judul{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 50px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container{
+    width: 600px;
+    margin: 100px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container .computer-area{
+    background:linear-gradient(blue, lightblue);
+    text-align: center;
+    padding: 50px;
+}
+.computer-area h4{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 5px;
+}
+.computer-area img{
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* text area */
+.container .text-area{
+    top: 37%;
+    right: 28%;
+    width: 250px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    border:5px solid pink;
+    border-radius: 12px;
+    color: pink;
+    font-size: 1.6em;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.container .player-area{
+    background:linear-gradient(lightblue, blue);
+    padding: 100px;
+    margin-top: 10px;
+}
+
+.player-area ul li:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+    transition: ease-in-out .2s;
+
+}
+.player-area ul li{
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.player-area ul li img{
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 10px;
+}
+
+.player-area ul {
+    display: flex;
+    justify-content: center;
+}
+.player-area h4{
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+footer{
+    background-image: url(img/background.jpg);
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+
+/* responsive */
+
+@media(max-width : 550px){
+    .container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .computer-area img{
+        width: 100px;
+    }
+    .player-area ul li img{
+        width: 100px;
+    }
+
+    .container .text-area{
+        right: 65px;
+    }
+    .player-area h4{
+        font-size: 1.2rem;
+    }
+
+    footer{
+        font-size: .8em;
+    }
+    .judul{
+        font-size: 1.8em;
+    }
+    
+}
